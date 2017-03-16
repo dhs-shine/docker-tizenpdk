@@ -1,0 +1,14 @@
+version: '2'
+services:
+    tizenpdk:
+        image: tizenpdk/tizenpdk:latest
+        container_name: tizenpdk
+        hostname: tizenpdk
+        volumes:
+            - $PWD/home:/root
+            - /dev:/dev
+        entrypoint: /bin/bash
+        working_dir: /root
+        privileged: true
+        stdin_open: true
+        tty: true
