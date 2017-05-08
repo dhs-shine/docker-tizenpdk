@@ -5,7 +5,7 @@ services:
         container_name: tizenpdk
         hostname: tizenpdk
         volumes:
-            - $PWD/home:/root
+            - ${PWD}/home:/root
             - /dev:/dev
         entrypoint: /bin/bash
         working_dir: /root

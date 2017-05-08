@@ -17,7 +17,7 @@ RUN add-apt-repository -y \
 
 # Install pdk packages
 RUN apt-get update && apt-get install -y \
-  tizenpdk=0.2-1-0ubuntu3~ubuntu16.04.1 \
+  tizenpdk=0.3-1-0ubuntu0~ubuntu16.04.1 \
   && rm -rf /var/lib/apt/lists/*
 
 CMD ['/bin/bash']
